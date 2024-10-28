@@ -1,0 +1,68 @@
+Gestão de Esporte - Prova de Conceito (POC) em Kotlin
+Objetivo do Projeto
+Esta Prova de Conceito (POC) visa explorar e demonstrar diferentes tipos de navegação em um aplicativo mobile desenvolvido em Kotlin. O tema escolhido foi Gestão de Esporte, com foco em oferecer uma interface intuitiva para usuários interessados em atividades esportivas, facilitando o acesso a informações sobre treinos, metas e outras funcionalidades relacionadas ao esporte.
+
+Descrição do Projeto
+Tema: Gestão de Esporte
+Este aplicativo é projetado para ajudar os usuários a organizar e acompanhar treinos e metas esportivas. Além disso, oferece uma estrutura que permite expandir para funcionalidades adicionais, como monitoramento de progresso e sugestão de atividades.
+
+Público-Alvo
+Usuários interessados em esportes e atividades físicas que buscam uma maneira prática de organizar e monitorar seus treinos e metas.
+
+Estrutura e Funcionalidades do Aplicativo
+1. Telas e Navegação
+a) MainActivity - Tela Principal
+Descrição: Tela inicial do aplicativo, com botões de navegação para as demais telas principais do projeto.
+Navegação: Usa botões que, ao serem clicados, acionam intents para abrir as telas:
+SportsListActivity - Lista de Esportes
+ProfileActivity - Perfil com navegação em abas
+b) SportsListActivity - Tela de Lista de Esportes
+Descrição: Tela que contém uma lista de esportes e funcionalidades adicionais relacionadas.
+Navegação:
+Inclui um Navigation Drawer para navegação entre diferentes seções (por exemplo, Home, Configurações, Logout).
+O Navigation Drawer facilita o acesso a outras áreas do aplicativo, tornando a experiência do usuário mais organizada.
+c) ProfileActivity - Tela de Perfil
+Descrição: Tela onde o usuário pode acessar suas informações e acompanhar o progresso de seus treinos e metas.
+Navegação:
+Apresenta um TabLayout para alternar entre as abas "Treinos" e "Metas".
+Utiliza um ViewPager2 que permite deslizar entre as abas e alternar entre os fragmentos.
+2. Estrutura de Navegação
+Cada tela usa uma abordagem de navegação diferente, destacando as possibilidades oferecidas pelo desenvolvimento Android:
+
+Navegação por Intents: Conectando MainActivity às telas de destino, SportsListActivity e ProfileActivity.
+Navigation Drawer: Em SportsListActivity, facilitando a transição para diferentes seções de forma acessível e prática.
+TabLayout com ViewPager2: Em ProfileActivity, permitindo uma experiência fluida e intuitiva para alternar entre as abas.
+Funcionalidades Principais
+Navegação Intuitiva: O aplicativo utiliza diferentes estilos de navegação para enriquecer a experiência do usuário.
+Gestão de Treinos e Metas: Organização dos conteúdos em abas para fácil acesso às informações de treinos e metas.
+Interação com o Usuário: Navegação responsiva e acessível entre telas e abas.
+Estrutura do Código
+O código está organizado em arquivos Kotlin (.kt) para cada atividade e fragmento, assim como layouts XML para definir a interface do usuário.
+
+Principais Arquivos
+MainActivity.kt: Tela principal com botões que acionam intents para navegar para SportsListActivity e ProfileActivity.
+SportsListActivity.kt: Tela de lista de esportes, equipada com um Navigation Drawer para navegação entre diferentes seções.
+ProfileActivity.kt: Tela de perfil que usa TabLayout e ViewPager2 para alternar entre "Treinos" e "Metas".
+ProfilePagerAdapter.kt: Adapter para gerenciar os fragments no ViewPager2 dentro de ProfileActivity.
+Fragments:
+TrainingsFragment.kt: Fragmento para exibir conteúdo de treinos.
+GoalsFragment.kt: Fragmento para exibir conteúdo de metas.
+Instruções para Executar o Projeto
+Pré-requisitos
+IDE: Android Studio versão mais recente
+Linguagem: Kotlin
+SDK: Android SDK com nível mínimo de API 21 (Android 5.0 Lollipop) ou superior
+Passos para Executar
+Clone o repositório do projeto:
+bash
+Copiar código
+git clone https://github.com/usuario/gestao-de-esporte-poc.git
+Abra o projeto no Android Studio.
+Conecte um dispositivo Android ou inicie um emulador.
+Compile e execute o projeto:
+Selecione o dispositivo de execução e clique em "Run" ou utilize o atalho Shift + F10.
+Estrutura de Arquivos e Layouts
+activity_main.xml: Layout da MainActivity.
+activity_sports_list.xml: Layout da SportsListActivity com o Navigation Drawer.
+activity_profile.xml: Layout da ProfileActivity com TabLayout e ViewPager2.
+fragment_trainings.xml e fragment_goals.xml: Layouts para os fragments "Treinos" e "Metas".
